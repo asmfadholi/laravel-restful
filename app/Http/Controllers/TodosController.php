@@ -14,7 +14,7 @@ namespace App\Http\Controllers;
          $todos = DB::table('todo')->get();
 
          // mengirim data pegawai ke view index
-         return json_encode($todos);
+         return response()->json($todos);
 
      }
  }
